@@ -9,34 +9,42 @@
 <body>
     <header>
         <div class="logo">
-            <h1>Gambling Website - Nine Wins</h1>
+            <h1 class="logo-text">
+                <img src="D:\[NW] Nine Wins\9wins.png" alt="Logo" class="logo-img">
+                <i>WELCOME TO, NINETAILS</i>
+            </h1>
         </div>
         <nav>
-            <ul>
-                <button id="home-button">Home</button>
-                <button id="slide-button">Slides</button>
-                <button id="flipit-button">Flipit</button>
-            </ul>
+            <button id="home-button">Home</button>
+            <button id="slide-button">Slides</button>
+            <button id="flipit-button">Flipit</button>
         </nav>
-    </header>
-    <main>
-        <div class="home-page">
-            <div class="home-page-content">
-                <h1>Welcome User!</h1>
+        <div class="scroll-down"></div>
+        <!-- Add a scroll-down element -->
+        <div class="notification">
+            <div class="notification-box">
+                <p>You must accept the Terms of Service, and by accepting the ToS, users give their informed consent to abide by the rules set forth by the service provider.</p>
+                <button id="accept-button">Understood - ✅</button>
+                <div class="dont-show-again">Don't show again</div>
             </div>
         </div>
-        <div class="game-container">
-            <div class="arrow"></div>
-        </div>
-        <div class="color-buttons">
-            <button id="red-button">Red</button> <!-- Changed color name to Red -->
-            <button id="purple-button">Purple</button> <!-- Changed color name to Purple -->
-        </div>
-        <input type="number" id="bet-amount" placeholder="Enter bet amount">
-        <button id="play-button">Play</button>
-        <div id="balance">Balance: $100</div>
-    </main>
+    </header>
+    
+
     <script src="script.js"></script>
+    <script>
+        // Get the logo image element
+        const logoImg = document.querySelector('.logo-img');
+
+        // Modify the image size
+        logoImg.style.width = '100px'; // Set the width to 100 pixels
+        logoImg.style.height = 'auto'; // Maintain the aspect ratio
+
+        // Modify the image position
+        logoImg.style.marginTop = '0px'; // Adjust the top margin
+        logoImg.style.marginBottom = '-15px'; // Adjust the bottom margin
+    </script>
 </body>
-<footer>&copy; 2024 Bloxflip. All rights reserved.</footer>
+<footer>© 2024 Bloxflip. All rights reserved.</footer>
 </html>
+
